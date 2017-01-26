@@ -171,13 +171,14 @@ _______________
 _target_
 * workspace: slug
 * project: id
+* --opton=REPLAY_MODE: full or range
+	* you must add this option flag
 
 _force_
 Optional. This flag will stop any sync that is currently running for the source and start a new one.
 
 _option_
 Optional.
-* REPLAY_MODE: full or range
 * REPLAY_FROM: "YYYY-MM-DD"
 * REPLAY_TO: "YYYY-MM-DD"
 * SOURCE_FILTER: objects or events
@@ -191,7 +192,7 @@ Object with run info.
 ### Example:
 
 ```
-t task force-run connector --project=GroKT0tUsy --force
+t task force-run connector --project=GroKT0tUsy  --option=REPLAY_MODE=full --force
 
 t task force-run connector --option=REPLAY_MODE=full --option=SOURCE_FILTER=objects --option=COLLECTION_FILTER=users --workspace=segment --force
 
