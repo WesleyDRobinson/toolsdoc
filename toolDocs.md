@@ -228,7 +228,7 @@ _target_
 _range_
 * full
 * from: YYYY-MM-DD
-* to: YYYY-MM-DD
+* to: YYYY-MM-DD (non-inclusive)
 
 _cluster-id_
 Optional.
